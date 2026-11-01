@@ -1,0 +1,172 @@
+{
+  "format": "graphite-document",
+  "version": 1,
+  "title": "Functions and discontinuities",
+  "x_axis": {
+    "minimum": -6.0,
+    "maximum": 6.0,
+    "major": 2.0,
+    "minor": 0.5,
+    "title": "x",
+    "visible": true,
+    "positive": true,
+    "negative": true,
+    "ticks": true,
+    "numbers": true,
+    "title_visible": true,
+    "arrowheads": "both",
+    "position": 0.0,
+    "label_side": "below",
+    "number_format": "auto",
+    "decimals": 2,
+    "width": 1.5,
+    "line_style": "solid"
+  },
+  "y_axis": {
+    "minimum": -4.0,
+    "maximum": 8.0,
+    "major": 2.0,
+    "minor": 0.5,
+    "title": "y",
+    "visible": true,
+    "positive": true,
+    "negative": true,
+    "ticks": true,
+    "numbers": true,
+    "title_visible": true,
+    "arrowheads": "both",
+    "position": 0.0,
+    "label_side": "left",
+    "number_format": "auto",
+    "decimals": 2,
+    "width": 1.5,
+    "line_style": "solid"
+  },
+  "objects": [
+    {
+      "kind": "function",
+      "points": [],
+      "name": "Quadratic",
+      "label": "y = x²",
+      "id": "81ffaadc-e88f-4cb3-b088-a866b1843622",
+      "visible": true,
+      "locked": false,
+      "group": "",
+      "layer": "Drawing",
+      "style": {
+        "color": "#2459ad",
+        "width": 2.0,
+        "line_style": "solid",
+        "opacity": 1.0,
+        "marker": "circle",
+        "marker_size": 6.0,
+        "fill": "#ffffff",
+        "font": "Sans Serif",
+        "font_size": 12.0,
+        "bold": false,
+        "italic": false,
+        "align": "left",
+        "rotation": 0.0,
+        "arrow_start": false,
+        "arrow_end": true,
+        "arrow_size": 12.0,
+        "background": "transparent"
+      },
+      "data": {
+        "expression": "x^2",
+        "label_position": [
+          2.0,
+          4.0
+        ]
+      }
+    },
+    {
+      "kind": "function",
+      "points": [],
+      "name": "Sine",
+      "label": "sin(x)",
+      "id": "8b44bee2-ede0-4327-9261-23cea1806ff1",
+      "visible": true,
+      "locked": false,
+      "group": "",
+      "layer": "Drawing",
+      "style": {
+        "color": "#b45c2c",
+        "width": 2.0,
+        "line_style": "solid",
+        "opacity": 1.0,
+        "marker": "circle",
+        "marker_size": 6.0,
+        "fill": "#ffffff",
+        "font": "Sans Serif",
+        "font_size": 12.0,
+        "bold": false,
+        "italic": false,
+        "align": "left",
+        "rotation": 0.0,
+        "arrow_start": false,
+        "arrow_end": true,
+        "arrow_size": 12.0,
+        "background": "transparent"
+      },
+      "data": {
+        "expression": "sin(x)",
+        "label_position": [
+          3.2,
+          0.0
+        ]
+      }
+    },
+    {
+      "kind": "function",
+      "points": [],
+      "name": "Reciprocal",
+      "label": "1/x",
+      "id": "987336f7-d533-4ef0-868f-9223848320e2",
+      "visible": true,
+      "locked": false,
+      "group": "",
+      "layer": "Drawing",
+      "style": {
+        "color": "#45816d",
+        "width": 2.0,
+        "line_style": "solid",
+        "opacity": 1.0,
+        "marker": "circle",
+        "marker_size": 6.0,
+        "fill": "#ffffff",
+        "font": "Sans Serif",
+        "font_size": 12.0,
+        "bold": false,
+        "italic": false,
+        "align": "left",
+        "rotation": 0.0,
+        "arrow_start": false,
+        "arrow_end": true,
+        "arrow_size": 12.0,
+        "background": "transparent"
+      },
+      "data": {
+        "expression": "1/x",
+        "label_position": [
+          -2.5,
+          -0.4
+        ]
+      }
+    }
+  ],
+  "grid_major": true,
+  "grid_minor": false,
+  "origin_visible": true,
+  "origin_label": true,
+  "labels_visible": true,
+  "type_visibility": {},
+  "snap_grid": false,
+  "snap_points": true,
+  "snap_intersections": false,
+  "snap_lines": false,
+  "snap_tolerance_pixels": 10.0,
+  "snap_interval": 0.5,
+  "mode": "four-quadrant",
+  "radians": true
+}

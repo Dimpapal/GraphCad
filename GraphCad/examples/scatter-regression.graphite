@@ -1,0 +1,210 @@
+{
+  "format": "graphite-document",
+  "version": 1,
+  "title": "Scatter and linked regression",
+  "x_axis": {
+    "minimum": 0.0,
+    "maximum": 12.0,
+    "major": 2.0,
+    "minor": 0.5,
+    "title": "X",
+    "visible": true,
+    "positive": true,
+    "negative": false,
+    "ticks": true,
+    "numbers": true,
+    "title_visible": true,
+    "arrowheads": "positive",
+    "position": 0.0,
+    "label_side": "below",
+    "number_format": "auto",
+    "decimals": 2,
+    "width": 1.5,
+    "line_style": "solid"
+  },
+  "y_axis": {
+    "minimum": 0.0,
+    "maximum": 30.0,
+    "major": 5.0,
+    "minor": 1.0,
+    "title": "Y",
+    "visible": true,
+    "positive": true,
+    "negative": false,
+    "ticks": true,
+    "numbers": true,
+    "title_visible": true,
+    "arrowheads": "positive",
+    "position": 0.0,
+    "label_side": "left",
+    "number_format": "auto",
+    "decimals": 2,
+    "width": 1.5,
+    "line_style": "solid"
+  },
+  "objects": [
+    {
+      "kind": "scatter",
+      "points": [],
+      "name": "Experimental observations",
+      "label": "",
+      "id": "f4cd2cd3-0c3c-4423-b56b-56902992ddb9",
+      "visible": true,
+      "locked": false,
+      "group": "",
+      "layer": "Drawing",
+      "style": {
+        "color": "#2459ad",
+        "width": 2.0,
+        "line_style": "solid",
+        "opacity": 1.0,
+        "marker": "circle",
+        "marker_size": 5,
+        "fill": "#ffffff",
+        "font": "Sans Serif",
+        "font_size": 12.0,
+        "bold": false,
+        "italic": false,
+        "align": "left",
+        "rotation": 0.0,
+        "arrow_start": false,
+        "arrow_end": true,
+        "arrow_size": 12.0,
+        "background": "transparent"
+      },
+      "data": {
+        "rows": [
+          [
+            1.0,
+            4.5
+          ],
+          [
+            2.0,
+            5.8
+          ],
+          [
+            3.0,
+            8.1
+          ],
+          [
+            4.0,
+            10.8
+          ],
+          [
+            5.0,
+            12.7
+          ],
+          [
+            6.0,
+            14.1
+          ],
+          [
+            7.0,
+            18.2
+          ],
+          [
+            8.0,
+            19.4
+          ],
+          [
+            9.0,
+            21.2
+          ],
+          [
+            10.0,
+            24.1
+          ]
+        ]
+      }
+    },
+    {
+      "kind": "regression",
+      "points": [],
+      "name": "Least-squares fit",
+      "label": "Linear fit",
+      "id": "df78d772-a0f2-4a95-a8ef-558e989c9761",
+      "visible": true,
+      "locked": false,
+      "group": "",
+      "layer": "Drawing",
+      "style": {
+        "color": "#b45c2c",
+        "width": 2,
+        "line_style": "solid",
+        "opacity": 1.0,
+        "marker": "circle",
+        "marker_size": 6.0,
+        "fill": "#ffffff",
+        "font": "Sans Serif",
+        "font_size": 12.0,
+        "bold": false,
+        "italic": false,
+        "align": "left",
+        "rotation": 0.0,
+        "arrow_start": false,
+        "arrow_end": true,
+        "arrow_size": 12.0,
+        "background": "transparent"
+      },
+      "data": {
+        "source_id": "f4cd2cd3-0c3c-4423-b56b-56902992ddb9",
+        "label_position": [
+          8.0,
+          22.0
+        ]
+      }
+    },
+    {
+      "kind": "text",
+      "points": [
+        [
+          1.0,
+          27.0
+        ]
+      ],
+      "name": "Regression description",
+      "label": "",
+      "id": "926141e7-b1b6-4f91-9d97-c675d9096aca",
+      "visible": true,
+      "locked": false,
+      "group": "",
+      "layer": "Drawing",
+      "style": {
+        "color": "#33465f",
+        "width": 2.0,
+        "line_style": "solid",
+        "opacity": 1.0,
+        "marker": "circle",
+        "marker_size": 6.0,
+        "fill": "#ffffff",
+        "font": "Sans Serif",
+        "font_size": 13,
+        "bold": false,
+        "italic": false,
+        "align": "left",
+        "rotation": 0.0,
+        "arrow_start": false,
+        "arrow_end": true,
+        "arrow_size": 12.0,
+        "background": "transparent"
+      },
+      "data": {
+        "text": "Linked observations and least-squares line"
+      }
+    }
+  ],
+  "grid_major": true,
+  "grid_minor": false,
+  "origin_visible": false,
+  "origin_label": true,
+  "labels_visible": true,
+  "type_visibility": {},
+  "snap_grid": false,
+  "snap_points": true,
+  "snap_intersections": false,
+  "snap_lines": false,
+  "snap_tolerance_pixels": 10.0,
+  "snap_interval": 0.5,
+  "mode": "positive",
+  "radians": true
+}

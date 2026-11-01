@@ -1,0 +1,346 @@
+{
+  "format": "graphite-document",
+  "version": 1,
+  "title": "Supply and demand",
+  "x_axis": {
+    "minimum": 0.0,
+    "maximum": 10.0,
+    "major": 1.0,
+    "minor": 0.2,
+    "title": "Quantity",
+    "visible": true,
+    "positive": true,
+    "negative": false,
+    "ticks": false,
+    "numbers": false,
+    "title_visible": true,
+    "arrowheads": "positive",
+    "position": 0.0,
+    "label_side": "below",
+    "number_format": "auto",
+    "decimals": 2,
+    "width": 1.5,
+    "line_style": "solid"
+  },
+  "y_axis": {
+    "minimum": 0.0,
+    "maximum": 10.0,
+    "major": 1.0,
+    "minor": 0.2,
+    "title": "Price",
+    "visible": true,
+    "positive": true,
+    "negative": false,
+    "ticks": false,
+    "numbers": false,
+    "title_visible": true,
+    "arrowheads": "positive",
+    "position": 0.0,
+    "label_side": "left",
+    "number_format": "auto",
+    "decimals": 2,
+    "width": 1.5,
+    "line_style": "solid"
+  },
+  "objects": [
+    {
+      "kind": "construction",
+      "points": [
+        [
+          5.0,
+          0.0
+        ],
+        [
+          5.0,
+          5.0
+        ]
+      ],
+      "name": "Quantity guide",
+      "label": "",
+      "id": "959eb9ba-73b5-404d-9b5a-bc65ba24096a",
+      "visible": true,
+      "locked": false,
+      "group": "",
+      "layer": "Drawing",
+      "style": {
+        "color": "#758399",
+        "width": 1.2,
+        "line_style": "dashed",
+        "opacity": 1.0,
+        "marker": "circle",
+        "marker_size": 6.0,
+        "fill": "#ffffff",
+        "font": "Sans Serif",
+        "font_size": 12.0,
+        "bold": false,
+        "italic": false,
+        "align": "left",
+        "rotation": 0.0,
+        "arrow_start": false,
+        "arrow_end": true,
+        "arrow_size": 12.0,
+        "background": "transparent"
+      },
+      "data": {}
+    },
+    {
+      "kind": "construction",
+      "points": [
+        [
+          0.0,
+          5.0
+        ],
+        [
+          5.0,
+          5.0
+        ]
+      ],
+      "name": "Price guide",
+      "label": "",
+      "id": "5adc6721-d7b2-4e09-959c-587b635ecc40",
+      "visible": true,
+      "locked": false,
+      "group": "",
+      "layer": "Drawing",
+      "style": {
+        "color": "#758399",
+        "width": 1.2,
+        "line_style": "dashed",
+        "opacity": 1.0,
+        "marker": "circle",
+        "marker_size": 6.0,
+        "fill": "#ffffff",
+        "font": "Sans Serif",
+        "font_size": 12.0,
+        "bold": false,
+        "italic": false,
+        "align": "left",
+        "rotation": 0.0,
+        "arrow_start": false,
+        "arrow_end": true,
+        "arrow_size": 12.0,
+        "background": "transparent"
+      },
+      "data": {}
+    },
+    {
+      "kind": "line",
+      "points": [
+        [
+          1.2,
+          8.8
+        ],
+        [
+          8.8,
+          1.2
+        ]
+      ],
+      "name": "Demand curve",
+      "label": "D",
+      "id": "c0707a4a-bd9e-45f5-bdac-3f5c6a2df878",
+      "visible": true,
+      "locked": false,
+      "group": "",
+      "layer": "Drawing",
+      "style": {
+        "color": "#2459ad",
+        "width": 2.2,
+        "line_style": "solid",
+        "opacity": 1.0,
+        "marker": "circle",
+        "marker_size": 6.0,
+        "fill": "#2459ad",
+        "font": "Sans Serif",
+        "font_size": 12.0,
+        "bold": false,
+        "italic": false,
+        "align": "left",
+        "rotation": 0.0,
+        "arrow_start": false,
+        "arrow_end": true,
+        "arrow_size": 12.0,
+        "background": "transparent"
+      },
+      "data": {
+        "label_position": [
+          8.9,
+          1.3
+        ]
+      }
+    },
+    {
+      "kind": "line",
+      "points": [
+        [
+          1.2,
+          1.2
+        ],
+        [
+          8.8,
+          8.8
+        ]
+      ],
+      "name": "Supply curve",
+      "label": "S",
+      "id": "5e227560-ca51-4587-a612-d5db5264da17",
+      "visible": true,
+      "locked": false,
+      "group": "",
+      "layer": "Drawing",
+      "style": {
+        "color": "#b45c2c",
+        "width": 2.2,
+        "line_style": "solid",
+        "opacity": 1.0,
+        "marker": "circle",
+        "marker_size": 6.0,
+        "fill": "#b45c2c",
+        "font": "Sans Serif",
+        "font_size": 12.0,
+        "bold": false,
+        "italic": false,
+        "align": "left",
+        "rotation": 0.0,
+        "arrow_start": false,
+        "arrow_end": true,
+        "arrow_size": 12.0,
+        "background": "transparent"
+      },
+      "data": {
+        "label_position": [
+          8.9,
+          8.9
+        ]
+      }
+    },
+    {
+      "kind": "point",
+      "points": [
+        [
+          5.0,
+          5.0
+        ]
+      ],
+      "name": "Equilibrium",
+      "label": "E",
+      "id": "de335c92-2be7-4cc0-8c25-c089aec66477",
+      "visible": true,
+      "locked": false,
+      "group": "",
+      "layer": "Drawing",
+      "style": {
+        "color": "#182c49",
+        "width": 2.2,
+        "line_style": "solid",
+        "opacity": 1.0,
+        "marker": "circle",
+        "marker_size": 6.0,
+        "fill": "#182c49",
+        "font": "Sans Serif",
+        "font_size": 12.0,
+        "bold": false,
+        "italic": false,
+        "align": "left",
+        "rotation": 0.0,
+        "arrow_start": false,
+        "arrow_end": true,
+        "arrow_size": 12.0,
+        "background": "transparent"
+      },
+      "data": {
+        "label_position": [
+          5.25,
+          5.3
+        ]
+      }
+    },
+    {
+      "kind": "text",
+      "points": [
+        [
+          4.7,
+          -0.45
+        ]
+      ],
+      "name": "Equilibrium quantity label",
+      "label": "",
+      "id": "b32a47f6-2b0b-4785-b43e-941c1d919ac3",
+      "visible": true,
+      "locked": false,
+      "group": "",
+      "layer": "Drawing",
+      "style": {
+        "color": "#33465f",
+        "width": 2.2,
+        "line_style": "solid",
+        "opacity": 1.0,
+        "marker": "circle",
+        "marker_size": 6.0,
+        "fill": "#33465f",
+        "font": "Sans Serif",
+        "font_size": 12.0,
+        "bold": false,
+        "italic": false,
+        "align": "left",
+        "rotation": 0.0,
+        "arrow_start": false,
+        "arrow_end": true,
+        "arrow_size": 12.0,
+        "background": "transparent"
+      },
+      "data": {
+        "text": "Qₑ"
+      }
+    },
+    {
+      "kind": "text",
+      "points": [
+        [
+          -0.3,
+          5.05
+        ]
+      ],
+      "name": "Equilibrium price label",
+      "label": "",
+      "id": "2bd06e3a-4e8b-4989-a4ca-37a4671ccf14",
+      "visible": true,
+      "locked": false,
+      "group": "",
+      "layer": "Drawing",
+      "style": {
+        "color": "#33465f",
+        "width": 2.2,
+        "line_style": "solid",
+        "opacity": 1.0,
+        "marker": "circle",
+        "marker_size": 6.0,
+        "fill": "#33465f",
+        "font": "Sans Serif",
+        "font_size": 12.0,
+        "bold": false,
+        "italic": false,
+        "align": "left",
+        "rotation": 0.0,
+        "arrow_start": false,
+        "arrow_end": true,
+        "arrow_size": 12.0,
+        "background": "transparent"
+      },
+      "data": {
+        "text": "Pₑ"
+      }
+    }
+  ],
+  "grid_major": false,
+  "grid_minor": false,
+  "origin_visible": false,
+  "origin_label": true,
+  "labels_visible": true,
+  "type_visibility": {},
+  "snap_grid": false,
+  "snap_points": true,
+  "snap_intersections": false,
+  "snap_interval": 0.5,
+  "mode": "positive",
+  "radians": true
+}

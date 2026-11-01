@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "platform": "macOS-27.2-arm64-arm-64bit",
+  "checks": [
+    "Projection, linked perpendicular updates, orientation and signed Pearson r",
+    "Editable document round trip",
+    "PNG decoded at 1920 x 1080",
+    "Dark interface preserves identical export pixels",
+    "PDF writer generated a PDF document",
+    "SVG parsed with vector content",
+    "DXF reopened, geometry present, audit clean"
+  ]
+}

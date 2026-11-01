@@ -1,0 +1,6 @@
+PySide6==6.10.2
+ezdxf==1.4.5
+numpy==2.5.4
+fonttools==4.68.0
+pyparsing==3.3.3
+typing_extensions==4.16.0
