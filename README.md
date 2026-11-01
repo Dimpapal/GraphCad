@@ -54,7 +54,7 @@ For perpendicular construction to a finite segment, its **supporting infinite li
 
 ### Availability and limits
 
-The features above are implemented. The external ODA DWG conversion path remains **unverified with an actual converter**; no DWG writer or converter is bundled. Windows and Intel macOS build configurations are supplied, but those platforms have not been built or run in the macOS Apple Silicon development environment. See [validation results](docs/TEST_RESULTS.md) and [known limitations](#roadmap).
+The features above are implemented. The external ODA DWG conversion path remains **unverified with an actual converter**; no DWG writer or converter is bundled. Windows and Intel macOS build configurations are supplied, but those platforms have not been built or run in the macOS Apple Silicon development environment. See [validation results](GraphCad/docs/TEST_RESULTS.md) and [known limitations](#roadmap).
 
 ## Screenshots and demonstrations
 
@@ -62,13 +62,13 @@ These screenshots are generated from the application, not interface mockups:
 
 | Light interface | Dark interface |
 | --- | --- |
-| ![GraphCad light theme](docs/images/graphcad-light.png) | ![GraphCad dark theme](docs/images/graphcad-dark.png) |
+| ![GraphCad light theme](GraphCad/docs/images/graphcad-light.png) | ![GraphCad dark theme](GraphCad/docs/images/graphcad-dark.png) |
 
-![GraphCad precision controls](docs/images/graphcad-precision.png)
+![GraphCad precision controls](GraphCad/docs/images/graphcad-precision.png)
 
-![GraphCad regression and Pearson statistics](docs/images/graphcad-regression.png)
+![GraphCad regression and Pearson statistics](GraphCad/docs/images/graphcad-regression.png)
 
-The [editable examples](examples/README.md) include economics, mathematical functions, scatter/regression, and linked perpendicular construction. Open `.graphite` examples with **File → Open**. PNG, vector PDF/SVG, and DXF examples demonstrate actual export output.
+The [editable examples](GraphCad/examples/README.md) include economics, mathematical functions, scatter/regression, and linked perpendicular construction. Open `.graphite` examples with **File → Open**. PNG, vector PDF/SVG, and DXF examples demonstrate actual export output.
 
 ## Installation and downloads
 
@@ -84,13 +84,13 @@ An Intel Mac must build the source using an Intel Python environment; no Intel b
 
 ### Windows 11 x64
 
-No prebuilt Windows executable or installer was produced on the macOS host. Run the source or create the native executable on Windows using the exact steps below and the detailed [Windows 11 x64 guide](docs/WINDOWS11.md). A future published Windows build should contain the entire `GraphCad` folder or the Inno Setup installer; `GraphCad.exe` depends on its adjacent runtime files.
+No prebuilt Windows executable or installer was produced on the macOS host. Run the source or create the native executable on Windows using the exact steps below and the detailed [Windows 11 x64 guide](GraphCad/docs/WINDOWS11.md). A future published Windows build should contain the entire `GraphCad` folder or the Inno Setup installer; `GraphCad.exe` depends on its adjacent runtime files.
 
 ## Building from source
 
 ### Prerequisites
 
-Use **64-bit CPython 3.12** matching the target computer's architecture. Runtime dependencies are pinned in [requirements.txt](requirements.txt); build/test dependencies are in [requirements-dev.txt](requirements-dev.txt). PySide6 wheels include the Qt runtime; an independent Qt SDK, CMake project, or C++ compiler is not needed for the supported wheel-based build. The Python environment and dependencies must match the target OS; PyInstaller does not create a Windows executable from macOS.
+Use **64-bit CPython 3.12** matching the target computer's architecture. Runtime dependencies are pinned in [requirements.txt](GraphCad/requirements.txt); build/test dependencies are in [requirements-dev.txt](GraphCad/requirements-dev.txt). PySide6 wheels include the Qt runtime; an independent Qt SDK, CMake project, or C++ compiler is not needed for the supported wheel-based build. The Python environment and dependencies must match the target OS; PyInstaller does not create a Windows executable from macOS.
 
 The code uses Python 3.12 and Qt Widgets. macOS bundles target macOS 14+ because of the selected NumPy wheel baseline. Windows instructions target Windows 11 x64, not Windows on ARM.
 
@@ -123,7 +123,7 @@ Keep the complete `dist\GraphCad\` directory together, including `_internal`. To
 & 'C:\Program Files (x86)\Inno Setup 6\ISCC.exe' packaging\windows.iss
 ```
 
-Expected installer: `dist\GraphCad-1.1.0-Windows-x64-Setup.exe`. These Windows commands are based on the actual build configuration and have not been verified by executing a Windows build here. [WINDOWS11.md](docs/WINDOWS11.md) covers prerequisite installation, outputs, verification, signing, common errors, and platform limits in detail.
+Expected installer: `dist\GraphCad-1.1.0-Windows-x64-Setup.exe`. These Windows commands are based on the actual build configuration and have not been verified by executing a Windows build here. [WINDOWS11.md](GraphCad/docs/WINDOWS11.md) covers prerequisite installation, outputs, verification, signing, common errors, and platform limits in detail.
 
 ### macOS
 
@@ -145,7 +145,7 @@ sh packaging/make_dmg.sh
 hdiutil verify dist/GraphCad-1.1.0-macOS-arm64.dmg
 ```
 
-Use an `x86_64` Python on an Intel Mac; the disk image filename follows the build machine's architecture. See [BUILD.md](docs/BUILD.md) for native signing, notarization, offline dependency installation, and CI. Public release signing requires the distributor's own credentials.
+Use an `x86_64` Python on an Intel Mac; the disk image filename follows the build machine's architecture. See [BUILD.md](GraphCad/docs/BUILD.md) for native signing, notarization, offline dependency installation, and CI. Public release signing requires the distributor's own credentials.
 
 ### Troubleshooting
 
@@ -154,7 +154,7 @@ Use an `x86_64` Python on an Intel Mac; the disk image filename follows the buil
 - **PowerShell activation is blocked:** use the explicit `.venv\Scripts\python.exe` commands above; activation is unnecessary.
 - **Missing Qt platform plugin:** run in a clean virtual environment and clear stale `QT_PLUGIN_PATH`/`QT_QPA_PLATFORM_PLUGIN_PATH` overrides. Keep the packaged runtime folder alongside the executable.
 - **Installer compiler not found:** use the actual Inno Setup 6 `ISCC.exe` installation path from your machine.
-- **DWG export asks for a converter:** install ODA File Converter separately under its own license; see [EXPORTS.md](docs/EXPORTS.md). PNG/PDF/SVG/DXF do not need it.
+- **DWG export asks for a converter:** install ODA File Converter separately under its own license; see [EXPORTS.md](GraphCad/docs/EXPORTS.md). PNG/PDF/SVG/DXF do not need it.
 
 ## Usage guide
 
@@ -234,7 +234,7 @@ GraphCad/
 └── .github/workflows/build.yml
 ```
 
-GraphCad continues reading existing `.graphite`/`.graphproj` projects and retains `graphite-document` and the versioned JSON structure. New snapping preferences and construction metadata are optional when loading old documents. Earlier Graphite versions may reject newer document fields; use GraphCad to edit projects saved with these additions. The Python namespace, legacy environment variables and platform document association identifiers are intentionally retained for compatibility. See [FORMAT.md](docs/FORMAT.md).
+GraphCad continues reading existing `.graphite`/`.graphproj` projects and retains `graphite-document` and the versioned JSON structure. New snapping preferences and construction metadata are optional when loading old documents. Earlier Graphite versions may reject newer document fields; use GraphCad to edit projects saved with these additions. The Python namespace, legacy environment variables and platform document association identifiers are intentionally retained for compatibility. See [FORMAT.md](GraphCad/docs/FORMAT.md).
 
 ## Technology stack and dependencies
 
@@ -250,7 +250,7 @@ GraphCad continues reading existing `.graphite`/`.graphproj` projects and retain
 | PyMuPDF | 2.0, development only | Inspect PDF output in tests | [PyMuPDF](https://pymupdf.readthedocs.io/) |
 | Inno Setup | 6.x, Windows packaging only | Optional installer | [Inno Setup](https://jrsoftware.org/isinfo.php) |
 
-The application has no hosted backend or ordinary-use network requirement. Dependency installation needs a package source or matching offline wheels. [LICENSES.md](docs/LICENSES.md) explains MIT, Qt/PySide LGPL/GPL or commercial terms, dependency notices, test-only PyMuPDF terms, and the separate optional ODA license. Third-party license files are collected into native bundles.
+The application has no hosted backend or ordinary-use network requirement. Dependency installation needs a package source or matching offline wheels. [LICENSES.md](GraphCad/docs/LICENSES.md) explains MIT, Qt/PySide LGPL/GPL or commercial terms, dependency notices, test-only PyMuPDF terms, and the separate optional ODA license. Third-party license files are collected into native bundles.
 
 ## Testing and quality assurance
 
@@ -260,7 +260,7 @@ Install development dependencies and run:
 python -m pytest -q
 ```
 
-Here `python` means the virtual environment executable shown in the platform instructions. Tests use Qt's offscreen platform and cover existing editor behavior plus line projection/snapping, perpendicular dependency updates, geometric angle constraints, theme persistence, export color stability/dimensions, and known correlation datasets. [TEST_RESULTS.md](docs/TEST_RESULTS.md) records actual counts, build details and unverified platforms; results are not inferred from compilation.
+Here `python` means the virtual environment executable shown in the platform instructions. Tests use Qt's offscreen platform and cover existing editor behavior plus line projection/snapping, perpendicular dependency updates, geometric angle constraints, theme persistence, export color stability/dimensions, and known correlation datasets. [TEST_RESULTS.md](GraphCad/docs/TEST_RESULTS.md) records actual counts, build details and unverified platforms; results are not inferred from compilation.
 
 The build's `--test` option runs the suite before freezing. The installed application's `--verify-build DIRECTORY` command checks editable saving/reopening and PNG/PDF/SVG/DXF output using its bundled dependencies, writing an inspectable JSON report. Native macOS startup, screenshots, signature integrity, and the DMG are checked separately. The supplied CI workflow builds each configured platform on its own runner; a supplied workflow is not a claim that CI has already run.
 
@@ -285,7 +285,7 @@ For code changes, create a focused branch, retain mathematical world coordinates
 
 ## License
 
-GraphCad uses the existing **MIT License** in [LICENSE](LICENSE). The original Graphite contributors' copyright notice is retained. Third-party dependencies keep their own licenses; the MIT application license does not replace Qt/PySide, Python, PyInstaller, or optional ODA obligations. See [dependency and redistribution notices](docs/LICENSES.md) before distributing a release.
+GraphCad uses the existing **MIT License** in [LICENSE](LICENSE). The original Graphite contributors' copyright notice is retained. Third-party dependencies keep their own licenses; the MIT application license does not replace Qt/PySide, Python, PyInstaller, or optional ODA obligations. See [dependency and redistribution notices](GraphCad/docs/LICENSES.md) before distributing a release.
 
 ## Acknowledgements
 
